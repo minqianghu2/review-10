@@ -1,0 +1,10 @@
+Merits:
+In this paper, the authors firstly gave us a background introduction of fuzzing: fuzzing is demonstrated as the most powerful testing techniques for the software. While it is having a shortcomings of the low coverage, which means most code bugs require larger code coverage to be discovered, insteading of just being test randomly. 
+
+In order to solve this problem, many techniques have been developed, such as corpus distillation, which relies on the coverage signals to select the subset of interesting seeds from a large groups of high- quality corpus of candidate files, which works great. Some other researches have also been conducted focusing on some techniques such as program flow analysis, symbolic execution, and static analysis.
+
+American Fuzzy Lop is demonstrated to be one of the most useful and advanced testing method, which was developed by camtuf. Through editing and compiling the source code, with simple but robust instruction-guided genetic algorithms, it contains multiple fuzzing strategies and tricks to minimize the skills. Afl-fuzz consumes fewer energies, with complex pre-configuration, it can deal with complicated programs in real life.
+ 
+
+Flaws:
+Some typical technical flaws mentioned in this paper including the great reliance  of high-quality legal input data corpus of the corpus distillation method. Therefore ,corpus distillation is not a suitable to generate the prospective fuzzing work. Although some techniques such as conclolic exec has always been regarded as prospectively, they are still constrained by the issues of reliability and the complexity of the execution complexity. 
