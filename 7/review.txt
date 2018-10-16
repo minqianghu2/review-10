@@ -1,14 +1,12 @@
 Merits:
-Based on the existing Fuzzing techniques. Angora is a more mature fuzzing tools which dealt with the coverage limitation through the solving of path constraints without symbolic executions. Several key tools are used here as well, such as scalable byte-level taint tracking, and context-sensitive branch count, which significantly address the potential problems of coverage limitations. 
+The idea of symbolic execution had been raised in more than 30 years ago. It was just made practically these years. Symbolic execution of software testing check the whole background of software to explore as many as its paths as possible. This technique would generate multiple test inputs to check the path, which will unveil some errors including assertion violations, security vulnerabilities and some other flaws related to the memory. 
 
-Although symbolic executions are used by fuzzing to solve path constraint, it is slow and not efficient. While Angora explores the states of a program by solving path constraints without using symbolic execution. Angora uses many techniques(Context-sensitive branch coverage, Scalable byte-level taint tracking, etc.)to track unexplored branches so that the path constraint could be solved efficiently.
+Symbolic execution is more powerful in finding errors on a given program path. It is not limited to finding generic errors such as buffer overflows, it could also check more advanced program properties. 
 
-The background of Angora is that: AFL and other fuzzers will have trouble calling the context when doing branch coverage computation.
+The key idea of the symbolic executions relies of the symbolic value, rather than concrete data as input to represent the values of program variables as symbolic expression over the symbolic input value. 
 
-Angora has good performance on LAVA, which could find more bugs.
+One key element for modern symbolic execution technique is its ability to mix concrete and symbolic execution. The basic two extensions are concolic testing, and execution-generated  testing. The dynamic symbolic execution’s ability to make constraint using concrete values to help it generate test inputs for execution paths simpler. 
 
-Shortcomings
+Shortcomings:
 
-Angora creates input to execute unexplored branches. It requires byte-level tracking, while it is very expensive.
-
-We have to increase the size of the hash table to keep the collision rate low for Angora.
+Some key challenges for symbolic execution could be path explosion. There might be huge number of programs paths that are filled with small programs. A better way is to go through the paths with highest priority firstly within a given a budget.
