@@ -1,0 +1,12 @@
+Merits:
+The idea of symbolic execution had been raised in more than 30 years ago. It was just made practically these years. Symbolic execution of software testing check the whole background of software to explore as many as its paths as possible. This technique would generate multiple test inputs to check the path, which will unveil some errors including assertion violations, security vulnerabilities and some other flaws related to the memory. 
+
+Symbolic execution is more powerful in finding errors on a given program path. It is not limited to finding generic errors such as buffer overflows, it could also check more advanced program properties. 
+
+The key idea of the symbolic executions relies of the symbolic value, rather than concrete data as input to represent the values of program variables as symbolic expression over the symbolic input value. 
+
+One key element for modern symbolic execution technique is its ability to mix concrete and symbolic execution. The basic two extensions are concolic testing, and execution-generated  testing. The dynamic symbolic execution’s ability to make constraint using concrete values to help it generate test inputs for execution paths simpler. 
+
+Shortcomings:
+
+Some key challenges for symbolic execution could be path explosion. There might be huge number of programs paths that are filled with small programs. A better way is to go through the paths with highest priority firstly within a given a budget.
