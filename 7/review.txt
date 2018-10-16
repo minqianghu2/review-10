@@ -1,0 +1,14 @@
+Merits:
+Based on the existing Fuzzing techniques. Angora is a more mature fuzzing tools which dealt with the coverage limitation through the solving of path constraints without symbolic executions. Several key tools are used here as well, such as scalable byte-level taint tracking, and context-sensitive branch count, which significantly address the potential problems of coverage limitations. 
+
+Although symbolic executions are used by fuzzing to solve path constraint, it is slow and not efficient. While Angora explores the states of a program by solving path constraints without using symbolic execution. Angora uses many techniques(Context-sensitive branch coverage, Scalable byte-level taint tracking, etc.)to track unexplored branches so that the path constraint could be solved efficiently.
+
+The background of Angora is that: AFL and other fuzzers will have trouble calling the context when doing branch coverage computation.
+
+Angora has good performance on LAVA, which could find more bugs.
+
+Shortcomings
+
+Angora creates input to execute unexplored branches. It requires byte-level tracking, while it is very expensive.
+
+We have to increase the size of the hash table to keep the collision rate low for Angora.
