@@ -1,12 +1,14 @@
 Merits:
-The idea of symbolic execution had been raised in more than 30 years ago. It was just made practically these years. Symbolic execution of software testing check the whole background of software to explore as many as its paths as possible. This technique would generate multiple test inputs to check the path, which will unveil some errors including assertion violations, security vulnerabilities and some other flaws related to the memory. 
 
-Symbolic execution is more powerful in finding errors on a given program path. It is not limited to finding generic errors such as buffer overflows, it could also check more advanced program properties. 
+The expressiveness make deep neural networks successful. 
 
-The key idea of the symbolic executions relies of the symbolic value, rather than concrete data as input to represent the values of program variables as symbolic expression over the symbolic input value. 
+There is no distinct differences between individual high level units and random linear combinations of high level units. At the same time, the deep neural networks learn input and output mapping that are fairly discontinuous to a significant extent. 
 
-One key element for modern symbolic execution technique is its ability to mix concrete and symbolic execution. The basic two extensions are concolic testing, and execution-generated  testing. The dynamic symbolic execution’s ability to make constraint using concrete values to help it generate test inputs for execution paths simpler. 
+In MNIST dataset, some architectures such as a simple fully connected network with one or more hidden layers and a Softmax classifier are used. The ImageNet dataset is used as well, which is also known as Krizhevsky et. al architecture.
 
+In this paper, the deep neural networks’ counter intuition has been demonstrated, with respections both to the semantic meanings and their discontinuities.
 Shortcomings:
 
-Some key challenges for symbolic execution could be path explosion. There might be huge number of programs paths that are filled with small programs. A better way is to go through the paths with highest priority firstly within a given a budget.
+Many unexpected and counter-intuitive properties are caused by the uninterpretable solutions.
+
+There are still some blind spots in neural networks. The current unit-level inspection has very few connections beyond confirming certain intuition regarding the complexity of the representations.
