@@ -1,14 +1,11 @@
-Merits:
+Review on “Adversarial Examples Are Not Easily Detected: Bypassing Ten Detection Methods”
 
-The expressiveness make deep neural networks successful. 
+This paper proposed multiple guidelines for by analyzing ten current vulnerabilities detecting method and evaluating  future proposed defenses. The authors studied how neural networks are applied to image classification, since it is the most accurate machine learning method by far. 
 
-There is no distinct differences between individual high level units and random linear combinations of high level units. At the same time, the deep neural networks learn input and output mapping that are fairly discontinuous to a significant extent. 
+The authors evaluate the defenses under three different threat models,. They not only consider the generic attacks, that do not takes some specific and complex measures to stimulate specifc detectors, which makes the evaluation concrete and rigrorous, white box attacks which are used for breaking each defense when tailored given defences are also included.  
 
-In MNIST dataset, some architectures such as a simple fully connected network with one or more hidden layers and a Softmax classifier are used. The ImageNet dataset is used as well, which is also known as Krizhevsky et. al architecture.
+The author also analyze and finalize  the attach approaches in order to evaluate the robustness of each of the defenses. Some evaluations are “evaluate with a strong attack”, “perfoming an adaptive, white -box attack”. 
 
-In this paper, the deep neural networks’ counter intuition has been demonstrated, with respections both to the semantic meanings and their discontinuities.
-Shortcomings:
+In addition, the authors also conclude a secondary classification based on the detection.
 
-Many unexpected and counter-intuitive properties are caused by the uninterpretable solutions.
-
-There are still some blind spots in neural networks. The current unit-level inspection has very few connections beyond confirming certain intuition regarding the complexity of the representations.
+It is considerable that how attackers might react to any proposed defense, and to evaluate whether the defense remains secure against an attackers who know how it work.
