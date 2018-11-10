@@ -1,13 +1,6 @@
-This paper pointed out the necessity of the corresponding more robust security to compensate the increased exposure to potential hostile code of  fast growing mobile application technologies. 
+Since traditional web browser are usually designed by the combination of both user and the web with a single protection domain. In this paper, the authors introduce how the security architecture works in the chromium browser. It has two modules in separate protection domain: a browser kermel, and a rendering engine; which helps mitigate the threats from the attackers.
+Chromium is the security architecture based on which the Google chrome was built. The components and module from the traditional browsers are allocated separately in browser kernel and the rendering engine, which optimize the security and performance. Rendering machine and the browser kernel are responsible for different tasks in the web browser, .
 
-The good side is that this paper points out some real world mobile application system problems. It also points out that web browser is different from OSs, which are more rely on the software mechanisms for its basic functionalities. 
+This architecture must be compatible with the existing web. The Chromium architecture may threat the rendering engine as a black box that is used for taking unparsed HTML as input and produces rendered bitmaps as output.
 
-The advantages of software protections are that they result in the wellness and completeness of the portability, and the performance of the software.
-
-The protections of Java is worthwhile since Java is a good choice for many reasons:
-Its safety of JVM for Java language’s type, the sandbox model provides many useful programs for being written, and etc.
-
-The least common mechanism principle in Java observes the principle to concern the dangers of sharing the state among different programs. It means to discuss the notion of converting storage channels.
-
-The downside of these protection designs are although they have strengths, they are still some weakness. For instance, although the capability system could be implemented naturally in Java, it is only suitable for applications where programs are not used in standard java APIs.
 
