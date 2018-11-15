@@ -1,7 +1,11 @@
-CSRF (Cross-Site Request Forgery) is a widely exploited web application. This paper introduces a new variation on CSRF attacks, login CSRF. The attacker will form a cross-site request to the login form, to log the victim into the web as attackers.
+Cryptographic protocols are generally used in distributed system for authentication and other purposes. The authors present sufficient principles for the design of cryptographic protocols.
 
-CSRF is one of the most exploit security vulnerabilities of 2007. In this paper, the authors examine the e scope and diversity of CSRF vulnerabilities, study existing defenses, and describe incremental and new defenses based on headers and web application firewall rules. 
+The principle with enough examples in order to demonstrate the actual applicability of the guidelines is also explained by the authors. 
 
-The definition of login cross-site request is also introduced, which are currently damaging and under-appreciated.
+The authors pick examples from authentication literature, while the principle are applicable elsewhere. 
 
-The most widely used methods to defend the CSRF attacks are:  validating a secret request token, validating the HTTP Referer header, and validating custom headers attached to XMLHttpRequests. While the downside is that none of these are satisfactory.
+The authors concentrated on the simple principles with the largest potential applicability and payoff. The literature is full of ingenious protocols and attacks.
+
+Notation common in the literatures are adopted. The notation is not uniform/identical. 
+
+This paper also contains the explanation of the concept and usage of encryption.
